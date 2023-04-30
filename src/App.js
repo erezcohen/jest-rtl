@@ -1,8 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Basic from "./Basic";
-import UserAction from "./UserAction";
-import UserActionDelayed from "./UserActionDelayed";
+import Basic from "./Components/Basic";
+import UserAction from "./Components/UserAction";
+import UserActionDelayed from "./Components/UserActionDelayed";
 
 function App() {
   return (

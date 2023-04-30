@@ -2,9 +2,13 @@ import { useState } from "react";
 
 const UserAction = () => {
   const [val, setVal] = useState("");
+
+  const handleCLick = async () =>
+    setVal(await Promise.resolve("Another Sub title"));
+
   return (
     <div>
-      <button onClick={() => setVal("New Sub title")}>Get Subtitle</button>
+      <button onClick={handleCLick}>Get Another Sub Title</button>
       <div>
         <span>{val}</span>
       </div>

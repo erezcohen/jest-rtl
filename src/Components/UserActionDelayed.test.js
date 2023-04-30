@@ -1,9 +1,9 @@
 import { render, screen, cleanup } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import UserAction from "./UserAction";
+import UserAction from "./Components/UserAction";
 
 describe("UserAction", () => {
-  afterEach(() => cleanup());
+  // afterEach(() => cleanup());
 
   it("changes the value on user click", async () => {
     const user = userEvent.setup();
